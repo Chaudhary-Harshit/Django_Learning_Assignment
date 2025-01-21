@@ -5,7 +5,23 @@
 {%endblock%}
 
 {% block content%}
-<h1>Post List</h1>
+
+<section>
+
+    <h1>Post List</h1>
+
+    {% for post in posts%}
+    <articlec class= "Post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date }}</p>
+        <p>{{ post.body }}</p>
+        </article>
+
+    {%endfor%}
+
+
+</section>
+
 
 
 {%endblock%}

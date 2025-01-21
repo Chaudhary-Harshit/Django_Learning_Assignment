@@ -8,3 +8,6 @@ def homepage(request):
 def about(request):
     # return HttpResponse("I am about page")
     return render(request,'about.html')
+
+def info(request):
+    return render(request, 'info.html')
